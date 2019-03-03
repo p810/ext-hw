@@ -3,8 +3,8 @@
 
 ## Installing
 ```bash
-git clone https://github.com/p810/ext-hello-world.git
-cd ext-hello-world/
+git clone https://github.com/p810/ext-hw.git
+cd ext-hw/
 phpize
 ./configure
 make
