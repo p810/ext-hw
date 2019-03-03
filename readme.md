@@ -10,7 +10,13 @@ phpize
 make
 ```
 
-If all went well you should see a `modules/` subdirectory. Copy `hello.so` from this directory into the directory where PHP locates extensions. You can find what this setting is by running `php -i | grep extension_dir`.
+After building the extension:
+
+1. Copy `./modules/hello.so` to PHP's extensions directory
+2. Add the following line to your `php.ini`:
+    - `extension = hello.so`
+
+You can find the extension directory by running `php -i | grep extension_dir`, and `php.ini` with `php --ini`, respectively.
 
 ## API
 ### `hello_world(): string`
